@@ -11,6 +11,10 @@
 }
 
 body {
+    /* 
+    helvetica first choice, 
+    arial second if the first one isn't available 
+    */
     font-family: Helvetica Neue, Arial;
     font-size: 18px;
 }
@@ -29,7 +33,7 @@ h1 {
 h2 {
     font-size: 25px;
     margin-bottom: 10px;
-}
+} 
 
 .main-text {
     text-align: justify;
@@ -45,6 +49,7 @@ h2 {
 
 .container {
     width: 1140px;
+    /* top right bottom left */
     margin: 20px auto 0 auto;
 }
 
