@@ -1,0 +1,4 @@
+1. fluid grid - all layout elements are sized in relative units such as percentages, instead of 
+                absolute units like pixels
+2. flexible images - images sized in relative units
+3. media queries - allow us to specify different css style rules for different browser widths
