@@ -5,20 +5,31 @@
 }
 
 h1{
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%; /* 200% of the font-size in html tag */
+    font-weight: 300;
+    text-transform: uppercase;  
+    letter-spacing: 1px;
+    word-spacing: 4px; 
 }
 
 html{
     background-color: #fff;
     color: #555;
     font-family: 'Lato', 'Arial', sans-serif;
-    font-size: 20px;
+    font-size: 20px; /* 
+                        base size of the fonts in the page 
+                        later the font sizes in other elements will be scaled in %
+                        so it can be responsive 
+                     */
     font-weight: 300;
     text-rendering: optimizeLegibility;
 }
 
 header{
-    /* first value in background image will be on the top of the next value */
+    /* first value in background image will be on the top of the next value  */
     background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
     background-size: cover; /* want to see the whole image */
     background-position: center; /* centering the background */
@@ -37,4 +48,35 @@ header{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.btn:link, /* the a element in normal state*/
+.btn:visited /* the a element after clicked on the link */{ 
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none; /* deleting underline */
+    border-radius: 200px;
+    color: #fff;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+
+.btn-full:link,
+.btn-full:visited{
+    background-color: #16a085;
+    border: 1px solid #16a085;
+    margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited{
+    border: 1px solid #16a085;
+}
+
+
+.btn:hover,
+.btn:active{
+    color: black;
+    background-color: #107360;
 }
