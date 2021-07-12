@@ -1,4 +1,7 @@
-/* green color : #16a085 */
+/* 
+green color : #16a085 
+display: block; forces a line break
+*/
 
 /* ------------------------------- */
 /* BASIC SETUP */
@@ -31,16 +34,70 @@ html{
     margin: 0 auto;     /* the same as -> margin: 0 auto 0 auto; */
 }
 
+section{
+    padding: 80px 0px;
+}
+
+.box{
+    padding: 1%;
+}
+
 /* ----- HEADINGS ----- */
 h1{
     margin-top: 0;
     margin-bottom: 20px;
     color: #fff;
     font-size: 240%; /* 200% of the font-size in html tag */
+    word-spacing: 4px; 
+    letter-spacing: 1px;
+}
+
+h1, h2, h3{
     font-weight: 300;
     text-transform: uppercase;  
+}
+
+h2{
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
     letter-spacing: 1px;
-    word-spacing: 4px; 
+}
+
+h2::after{
+    display: block;
+    height: 2px;
+    background-color: #16a085;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+h3{
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+/* ----- PARAGRAPHS ----- */
+.long-copy{
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%; /* 100% - 70% of the width = 30%/2 = 15% */
+}
+
+.box p{
+    font-size: 90%;
+    line-height: 145%;
+}
+
+/* ----- ICONS ----- */
+.icon-big{
+    display: block;
+    font-size: 350%;
+    color: #16a085;
+    margin-bottom: 10px;
 }
 
 /* ----- BUTTONS ----- */
@@ -105,7 +162,7 @@ header{
 }
 
 .main-nav{
-    margin-top: 50px;
+    margin-top: 60px;
     float: right;
     list-style: none; /* removing the bullet points */
 }
@@ -130,4 +187,51 @@ header{
 .main-nav li a:active{
     /* color: #16a085; */
     border-bottom: 2px solid #16a085;
+}
+
+/* ------------------------------- */
+/* FEATURES */
+/* ------------------------------- */
+.section-features .long-copy{
+    margin-bottom: 30px;
+}
+
+
+/* ------------------------------- */
+/* MEALS */
+/* ------------------------------- */
+
+.section-meals{
+    padding: 0px;
+}
+
+.meals-showcase{
+    list-style: none;
+    width: 100%; /* 100% of browser's width */
+}
+
+.meals-showcase li{
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.meal-photo{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background: black;
+}
+
+.meal-photo img{
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+    opacity: 70%;
+}
+
+.meal-photo img:hover{
+    transform: scale(1.03); /* 1.03 to avoid the white line in the bottom of the img box */
+    opacity: 100%;
 }
