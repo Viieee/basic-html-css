@@ -1,0 +1,9 @@
+https://www.youtube.com/watch?v=swWeWesZVZU
+use section when
+    multiple parts that have headings
+    require heading
+    content make sense together
+use article when
+    stand alone content
+use div when 
+    everything else (grouping a bunch of links)

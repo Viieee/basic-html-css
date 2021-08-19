@@ -1,0 +1,16 @@
+certain elements have meaning attached to them
+
+not all elements in html have meaning
+example:
+b element and strong element will do similar things into it's content 
+ which is making the text bold, but b element is not a semantic element 
+ while the strong element is, because the name of the element gives 
+ context into what it actually does and therefore have some type of meaning 
+ behind it.
+
+nav is also a semantic element, you can use div instead but nav will give more 
+context into the elements nested in it
+
+the reason why developers use semantic html is because it will give some type of 
+advantage in the google search engine (because the search engine will be able to 
+understand the structure of the website better in semantic html way)
