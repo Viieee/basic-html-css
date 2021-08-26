@@ -1,0 +1,58 @@
+if an element have more than one type of selector that try to apply some styling
+to it, ALL OF THEM WILL BE APPLIED!
+
+but if the styling is conflicting between the selectors, 
+for example in the font-size below:
+
+****************************************
+html:
+<p id="author" class="author">
+    Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027
+</p>
+
+css:
+.author{
+    font-size: 18px;
+}
+
+#author{
+    font-size: 20px -> this one will be the one that 
+}
+
+p{
+    font-size: 22px
+}
+****************************************
+
+THE HIGHEST PRIORITY for the selectors are the id selector, if theres multiple id
+selector, the last written on the css code will be the one applied
+
+THE SECOND HIGHEST is the class selector, if theres multiple class
+selector, the last written on the css code will be the one applied
+
+THE THIRD PRIORITISED is the element selector, if theres multiple element
+selector, the last written on the css code will be the one applied
+
+THE LAST is universal selector (*) 
+
+EXTRA NOTE:
+theres some higher priority in css,
+the highest priority is the declarations using !important 
+example:
+p { font-size: 18px !important; }
+
+the second highest is the inline styling
+
+
+-----------------------------------------------------------------
+
+an element with pseudo class will be prioritised
+example:
+
+a:link{
+  color: #0d7aa5; --> this will be the one that applied
+}
+
+a{
+    color: red;
+}

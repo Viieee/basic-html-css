@@ -1,0 +1,129 @@
+body {
+  font-family: sans-serif;
+  color: #444;
+}
+
+/* h1,
+h2,
+h3,
+h4,
+p,
+li {
+  font-family: sans-serif;
+  color: #444;
+} */
+
+h1,
+h2,
+h3 {
+  color: #0d7aa5;
+}
+
+h1 {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.5; /* 1.5 of the font size */
+}
+
+aside {
+  background-color: #ececec;
+  border-top: 5px solid #0d7aa5;
+  border-bottom: 5px solid #0d7aa5;
+}
+
+/** nested selector **/
+/* p inside of the footer tag */
+/* footer p {
+    font-size: 16px;
+}  */
+
+/* article header p {
+    font-style: italic;
+} */
+
+/** using id selector **/
+#author {
+  font-style: italic;
+}
+
+#copyright {
+  font-size: 16px;
+}
+
+/** using class selector **/
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.related {
+  list-style: none;
+}
+
+.main-header {
+  background-color: #ececec;
+}
+
+/** using pseudo class **/
+li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  font-style: italic;
+}
+
+li:nth-child(3) {
+  /* color: red; */
+}
+
+/* 
+selecting the last child of the article, if the child is p element, this 
+styling applies
+*/
+article p:last-child {
+  color: red;
+}
+
+/* this will target all the a element that have href attribute */
+a:link {
+  color: #0d7aa5;
+  text-decoration: none;
+}
+
+/* when the a element containing href have been clicked */
+a:visited {
+  color: #0d7aa5;
+}
+
+/* when the user hover over the element */
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* for a split second, when the user click the a element containing href */
+a:active {
+  background-color: black;
+  font-style: italic;
+}

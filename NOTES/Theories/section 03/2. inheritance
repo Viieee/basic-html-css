@@ -1,0 +1,23 @@
+inheritance in css is applied from parent element to child element
+
+some properties will be inherited from the parent element and will be applied to 
+    child element if the child element doesn't override the property
+
+****************************************
+html:
+<body>
+    <p>test</p>
+</body>
+
+css:
+body {
+  font-family: sans-serif; -> this will be applied (as long as it doesn't get overriden)
+  color: #444;
+}
+
+p{
+    color: red; -> this will be applied (override the parent's property)
+}
+****************************************
+
+the universal selector (*) select every single element on the page
